@@ -24,7 +24,7 @@
                                 <select id="smallSelect" class="form-select form-select" name="akses_user">
                                     <option selected disabled>Pilih Akses</option>
                                     <option {{ $user->akses_user == 'admin' ? 'selected' : '' }}>admin</option>
-                                    <option {{ $user->akses_user == 'petugas' ? 'selected' : '' }}>petugas</option>
+                                    {{-- <option {{ $user->akses_user == 'petugas' ? 'selected' : '' }}>petugas</option> --}}
                                 </select>
                                 @error('akses_user')
                                     <span class="text-danger text-sm"> {{ $message }}</span>

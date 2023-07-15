@@ -32,10 +32,9 @@
                                     <th>Supplier</th>
 
                                     <th>Nama Barang</th>
-                                    <th>Qty</th>
-                                    <th>Stock</th>
-                                    <th>Biaya Pesan</th>
-                                    <th>Tanggal Beli</th>
+                                    <th>Qty Masuk</th>
+                                    <th>Tanggal Masuk</th>
+
                                     <th>Option</th>
                                 </tr>
                             </thead>
@@ -46,10 +45,9 @@
                                         <th>{{ $dt->suppliers->nama_supplier }}</th>
                                         <td>{{ $dt->barangs->nama_barang }}</td>
                                         {{-- <td>{{ $dt->kategoris->nama_kategori }}</td> --}}
-                                        <td>{{ $dt->qty }}</td>
-                                        <td>{{ $dt->persentase }}</td>
-                                        <td>{{ $dt->biaya_simpan }}</td>
-                                        <td>{{ $dt->tanggal_beli }}</td>
+                                        <td>{{ $dt->qty_masuk }}</td>
+                                        <td>{{ $dt->tanggal_masuk }}</td>
+
 
                                         <td>
                                             <a class="btn btn-warning btn-sm"

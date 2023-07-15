@@ -24,7 +24,7 @@
                                 <select id="smallSelect" class="form-select form-select" name="akses_user">
                                     <option selected disabled>Pilih Akses</option>
                                     <option>admin</option>
-                                    <option>petugas</option>
+                                    {{-- <option>petugas</option> --}}
 
                                 </select>
                                 @error('akses_user')

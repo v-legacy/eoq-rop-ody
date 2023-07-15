@@ -28,6 +28,9 @@ class UserController extends Controller
 
     public function changedPassword(Request $request)
     {
+        $this->validate($request, [
+            'password' => 'required'
+        ]);
         $id =  auth()->user()->id;
 
         $user = User::where('id', $id)->first();
@@ -42,7 +45,7 @@ class UserController extends Controller
     {
         $user->password = bcrypt($user->username);
 
-        return back()->with('success', 'Password user berhasil di reset menjadi' . $user->username . 'Silahkan Relogin..!');
+        return back()->with('success', 'Password user berhasil di reset menjadi' . ' ' . $user->username . ' ' . 'Silahkan Relogin..!');
     }
 
     /**

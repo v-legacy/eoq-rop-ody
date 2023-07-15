@@ -46,9 +46,10 @@
                                         <td>{{ $dt->kode_barang }}</td>
                                         <td>{{ $dt->nama_barang }}</td>
                                         <td>{{ $dt->kategoris->nama_kategori }}</td>
+                                        <td>{{ $dt->stock }}</td>
                                         <td>{{ $dt->harga_beli }}</td>
                                         <td>{{ $dt->harga_jual }}</td>
-                                        <td>{{ $dt->stock }}</td>
+
                                         <td>{{ $dt->biaya_pesan }}</td>
 
                                         <td>

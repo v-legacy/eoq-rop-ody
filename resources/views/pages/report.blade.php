@@ -77,10 +77,11 @@
                                         <th>EOQ</th>
                                         <th>Frek</th>
                                         <th>ROP</th>
-                                        <th>Biaya Simpan</th>
-                                        <th>Biaya Pesan</th>
-                                        <th>Biaya Persediaan</th>
                                         <th>Tanggal Keluar</th>
+                                        <th>Biaya Pesan</th>
+                                        <th>Biaya Simpan</th>
+                                        <th>Biaya Persediaan</th>
+                                       
                                         {{-- <th>ROP</th>
                                         <th>ROP</th> --}}
                                     </tr>
@@ -94,8 +95,8 @@
                                             <td>{{ $item->frekuensi }}</td>
                                             <td>{{ $item->rop }}</td>
                                             <td>{{ $item->tanggal_keluar }}</td>
-                                            <td>@currency($item->total_biaya_simpan)</td>
                                             <td>@currency($item->total_biaya_pesan)</td>
+                                            <td>@currency($item->total_biaya_simpan)</td>
                                             <td>@currency($item->total_biaya_persediaan)</td>
 
                                         </tr>

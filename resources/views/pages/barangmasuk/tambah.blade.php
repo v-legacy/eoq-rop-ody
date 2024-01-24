@@ -37,7 +37,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label" for="basic-default-fullname">Qty</label>
+                                <label class="form-label" for="basic-default-fullname">Qty /gram</label>
                                 <input type="number" class="form-control" id="basic-default-fullname" min="0"
                                     name="qty_masuk">
                                 @error('qty_masuk')

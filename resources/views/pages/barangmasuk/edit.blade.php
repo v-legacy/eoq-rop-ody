@@ -27,10 +27,10 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label" for="basic-default-fullname">Qty</label>
+                                <label class="form-label" for="basic-default-fullname">Qty /gram</label>
                                 <input type="number" class="form-control" id="basic-default-fullname" min="0"
                                     name="qty_keluar" value="{{ $barangmasuk->qty_masuk }}">
-                                @error('qty_keluar')
+                                @error('qty_masuk')
                                     <span class="text-danger text-sm"> {{ $message }}</span>
                                 @enderror
                             </div>

@@ -33,7 +33,7 @@
                                     <th>Nama Barang</th>
                                     <th>Kategori</th>
                                     <th>Stock</th>
-                                    <th>Harga Beli</th>
+                                    <th>Harga Beli /Kg</th>
                                     <th>Harga Jual</th>
                                     <th>Biaya Pesan</th>
                                     <th>Option</th>
@@ -47,7 +47,7 @@
                                         <td>{{ $dt->nama_barang }}</td>
                                         <td>{{ $dt->kategoris->nama_kategori }}</td>
                                         <td>{{ $dt->stock }}</td>
-                                        <td>{{ $dt->harga_beli }}</td>
+                                        <td>{{ $dt->harga_beli .' /Kg' }}</td>
                                         <td>{{ $dt->harga_jual }}</td>
 
                                         <td>{{ $dt->biaya_pesan }}</td>

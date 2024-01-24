@@ -41,7 +41,7 @@
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label class="form-label" for="basic-default-fullname">harga beli</label>
+                                <label class="form-label" for="basic-default-fullname">harga beli /Kg</label>
                                 <input type="number" class="form-control" id="basic-default-fullname" min="0"
                                     name="harga_beli" value="{{ $barang->harga_beli }}">
                                 @error('harga_beli')
